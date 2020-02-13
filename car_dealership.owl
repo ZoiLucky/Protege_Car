@@ -1,0 +1,1345 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#"
+     xml:base="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#belongsTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#belongsTo">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasFacility"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Facility"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Car_Representative"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasAnalyst_Engineer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasAnalyst_Engineer">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#isAnalystEngineerOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Car_Representative"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Facility"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Analyst_Engineer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasAuto_Technician -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasAuto_Technician">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#isAutoTechnicianOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Car_Representative"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Facility"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Auto"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasCEO -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasCEO">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#isCEOOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Car_Representative"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#CEO"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasCar_Sales -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasCar_Sales">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#isCarSalesOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Car_Representative"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Facility"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Car_Sales"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasChief_Marketing_Officer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasChief_Marketing_Officer">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#isChiefMarketingOfficerOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Car_Representative"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Facility"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Chief_Marketing_Officer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasFacility -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasFacility">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Car_Representative"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Facility"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasHead_of_Car_Mechanic -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasHead_of_Car_Mechanic">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#isHeadCarMechanicOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Car_Representative"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Facility"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Head_of_Car_Mechanic"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasMaint_Technician -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasMaint_Technician">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#isMaint_TechnicianOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Car_Representative"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Facility"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Maintenance"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasSupervisor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasSupervisor">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#isSupervisorOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Analyst_Engineer"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Auto"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Car_Sales"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Maintenance"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Tire"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Trainee_Engineer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Staff"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasTechnical_Executive -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasTechnical_Executive">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#isTechnical_ExecutiveOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Car_Representative"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Facility"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Technical_Executive"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasTechnology_Analyst -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasTechnology_Analyst">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#isTechnology_AnalystOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Car_Representative"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Facility"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Technology_Analyst"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasTire_Technician -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasTire_Technician">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#isTire_TechnicianOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Car_Representative"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Facility"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Tire"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasTrainee_Engineer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasTrainee_Engineer">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#isTrainee_EngineerOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Car_Representative"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Facility"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Trainee_Engineer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#have_Parking_Space -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#have_Parking_Space">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Parking"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Staff"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#isAnalystEngineerOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#isAnalystEngineerOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Analyst_Engineer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Car_Representative"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Facility"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#isAutoTechnicianOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#isAutoTechnicianOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Auto"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Car_Representative"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Facility"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#isCEOOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#isCEOOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#CEO"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Car_Representative"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#isCarSalesOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#isCarSalesOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Car_Sales"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Car_Representative"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Facility"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#isChiefMarketingOfficerOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#isChiefMarketingOfficerOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Chief_Marketing_Officer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Car_Representative"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Facility"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#isHeadCarMechanicOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#isHeadCarMechanicOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Head_of_Car_Mechanic"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Car_Representative"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Facility"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#isMaint_TechnicianOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#isMaint_TechnicianOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Maintenance"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Car_Representative"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Facility"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#isSupervisorOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#isSupervisorOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Chief_Marketing_Officer"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Head_of_Car_Mechanic"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Technical_Executive"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Car_Sales"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Engineer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Technician"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#isTechnical_ExecutiveOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#isTechnical_ExecutiveOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Technical_Executive"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Car_Representative"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Facility"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#isTechnology_AnalystOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#isTechnology_AnalystOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Technology_Analyst"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Car_Representative"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Facility"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#isTire_TechnicianOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#isTire_TechnicianOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Tire"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Car_Representative"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Facility"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#isTrainee_EngineerOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#isTrainee_EngineerOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Trainee_Engineer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Car_Representative"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Facility"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#works_at_office -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#works_at_office">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Office"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Staff"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#works_at_service -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#works_at_service">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Service"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Staff"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasAdress -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasAdress">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Car_Representative"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Facility"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasCarDetails -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasCarDetails">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Cars"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasCarID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasCarID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Cars"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasCarModel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasCarModel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Cars"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasCarType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasCarType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Cars"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasCity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasCity">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasCountry -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasCountry"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasGender -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasGender">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Person"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>Female</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>Male</rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasID">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Staff"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasName">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasParkingSlots -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasParkingSlots">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Staff"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>False</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>True</rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasSurname -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasSurname">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Analyst_Engineer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Analyst_Engineer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Engineer"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Trainee_Engineer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Auto -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Auto">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Technician"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Maintenance"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Tire"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#CEO -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#CEO">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Staff"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#works_at_office"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Office"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Car_Representative -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Car_Representative">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#DomainEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasAnalyst_Engineer"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Analyst_Engineer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasAuto_Technician"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Auto"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasCEO"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#CEO"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasCar_Sales"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Car_Sales"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasChief_Marketing_Officer"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Chief_Marketing_Officer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasHead_of_Car_Mechanic"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Head_of_Car_Mechanic"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasMaint_Technician"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Maintenance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasTechnical_Executive"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Technical_Executive"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasTechnology_Analyst"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Technology_Analyst"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasTire_Technician"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Tire"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasTrainee_Engineer"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Trainee_Engineer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Car_Sales -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Car_Sales">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Staff"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#works_at_office"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Office"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Cars -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Cars">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Facility"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasCarDetails"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasCarID"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasCarModel"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasCarType"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Exhibition_Cars"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#For_Repair"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Test_Drive"/>
+        </owl:disjointUnionOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Chief_Marketing_Officer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Chief_Marketing_Officer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Staff"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#works_at_office"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Office"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#DomainEntity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#DomainEntity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Engineer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Engineer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Staff"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#works_at_office"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Office"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Analyst_Engineer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Trainee_Engineer"/>
+        </owl:disjointUnionOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Exhibition_Cars -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Exhibition_Cars">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Cars"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#For_Repair"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Test_Drive"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Facility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Facility">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#DomainEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#belongsTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Car_Representative"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#For_Repair -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#For_Repair">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Cars"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Test_Drive"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Head_of_Car_Mechanic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Head_of_Car_Mechanic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Staff"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#works_at_service"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Service"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Maintenance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Maintenance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Technician"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Tire"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Office -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Office">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Premises"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Parking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Parking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Premises"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Person">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#DomainEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasGender"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:oneOf>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>Female</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>Male</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </owl:oneOf>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasName"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasSurname"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Premises -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Premises">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Facility"/>
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Office"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Parking"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Service"/>
+        </owl:disjointUnionOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Premises"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Staff -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Staff">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Person"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#hasID"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Technical_Executive -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Technical_Executive">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Staff"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#works_at_service"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Service"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Technician -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Technician">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Staff"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#works_at_service"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Service"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Auto"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Maintenance"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Tire"/>
+        </owl:disjointUnionOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Technology_Analyst -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Technology_Analyst">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Staff"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#works_at_office"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Office"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Test_Drive -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Test_Drive">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Cars"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Tire -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Tire">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Technician"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Trainee_Engineer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Trainee_Engineer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Engineer"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Afroditi_Cholidou -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Afroditi_Cholidou">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Car_Sales"/>
+        <isCarSalesOf rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Toyota_Παρασκευάς_Α.Ε"/>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</hasGender>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1445</hasID>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Afroditi</hasName>
+        <hasParkingSlots rdf:datatype="http://www.w3.org/2001/XMLSchema#string">False</hasParkingSlots>
+        <hasSurname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cholidou</hasSurname>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Andreas_Petrousis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Andreas_Petrousis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Technology_Analyst"/>
+        <isTechnology_AnalystOf rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Toyota_Παρασκευάς_Α.Ε"/>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">6969</hasID>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Andreas</hasName>
+        <hasParkingSlots rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</hasParkingSlots>
+        <hasSurname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Petrousis</hasSurname>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Auris -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Auris">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#For_Repair"/>
+        <belongsTo rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Toyota_Παρασκευάς_Α.Ε"/>
+        <hasCarDetails rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1600cc</hasCarDetails>
+        <hasCarID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EEE 2002</hasCarID>
+        <hasCarModel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Toyota Auris Hybrid</hasCarModel>
+        <hasCarType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hatchback</hasCarType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Avensis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Avensis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#For_Repair"/>
+        <belongsTo rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Toyota_Παρασκευάς_Α.Ε"/>
+        <hasCarDetails rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1600cc</hasCarDetails>
+        <hasCarID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NOH 2281</hasCarID>
+        <hasCarModel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Toyota Avensis Benzin</hasCarModel>
+        <hasCarType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sedan</hasCarType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Aygo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Aygo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#For_Repair"/>
+        <belongsTo rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Toyota_Παρασκευάς_Α.Ε"/>
+        <hasCarDetails rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1000cc</hasCarDetails>
+        <hasCarID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BOT 8188</hasCarID>
+        <hasCarModel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Toyota Aygo Benzin</hasCarModel>
+        <hasCarType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Micro</hasCarType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Basilis_Lolas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Basilis_Lolas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Car_Sales"/>
+        <isCarSalesOf rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Toyota_Παρασκευάς_Α.Ε"/>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1446</hasID>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Basilis</hasName>
+        <hasParkingSlots rdf:datatype="http://www.w3.org/2001/XMLSchema#string">False</hasParkingSlots>
+        <hasSurname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lolas</hasSurname>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#C-HR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#C-HR">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Test_Drive"/>
+        <belongsTo rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Toyota_Παρασκευάς_Α.Ε"/>
+        <hasCarDetails rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1600cc</hasCarDetails>
+        <hasCarID rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1111</hasCarID>
+        <hasCarModel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Toyota CH-R Hybrid</hasCarModel>
+        <hasCarType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SUV</hasCarType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Corolla -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Corolla">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Test_Drive"/>
+        <belongsTo rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Toyota_Παρασκευάς_Α.Ε"/>
+        <hasCarDetails rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1800cc</hasCarDetails>
+        <hasCarID rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2222</hasCarID>
+        <hasCarModel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Toyota Corolla  Hybrid</hasCarModel>
+        <hasCarType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hatchback</hasCarType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Giannis_Keikoglou -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Giannis_Keikoglou">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Auto"/>
+        <isAutoTechnicianOf rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Toyota_Παρασκευάς_Α.Ε"/>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1001</hasID>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giannis</hasName>
+        <hasParkingSlots rdf:datatype="http://www.w3.org/2001/XMLSchema#string">False</hasParkingSlots>
+        <hasSurname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Keikoglou</hasSurname>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Giorgos_Montzelas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Giorgos_Montzelas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Auto"/>
+        <isAutoTechnicianOf rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Toyota_Παρασκευάς_Α.Ε"/>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1000</hasID>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giorgos</hasName>
+        <hasParkingSlots rdf:datatype="http://www.w3.org/2001/XMLSchema#string">False</hasParkingSlots>
+        <hasSurname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Montzelas</hasSurname>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Ilias_Markou -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Ilias_Markou">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Auto"/>
+        <isAutoTechnicianOf rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Toyota_Παρασκευάς_Α.Ε"/>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2000</hasID>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ilias</hasName>
+        <hasParkingSlots rdf:datatype="http://www.w3.org/2001/XMLSchema#string">False</hasParkingSlots>
+        <hasSurname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Markou</hasSurname>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Iwanna_Sarri -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Iwanna_Sarri">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Car_Sales"/>
+        <isCarSalesOf rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Toyota_Παρασκευάς_Α.Ε"/>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</hasGender>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1447</hasID>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Iwanna</hasName>
+        <hasParkingSlots rdf:datatype="http://www.w3.org/2001/XMLSchema#string">False</hasParkingSlots>
+        <hasSurname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sarri</hasSurname>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Iwannis_Tanidis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Iwannis_Tanidis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#CEO"/>
+        <isCEOOf rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Toyota_Παρασκευάς_Α.Ε"/>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1545</hasID>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Iwannis</hasName>
+        <hasParkingSlots rdf:datatype="http://www.w3.org/2001/XMLSchema#string">True</hasParkingSlots>
+        <hasSurname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tanidis</hasSurname>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Katerina_Stikoudi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Katerina_Stikoudi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Tire"/>
+        <isTire_TechnicianOf rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Toyota_Παρασκευάς_Α.Ε"/>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">7894</hasID>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katerina</hasName>
+        <hasParkingSlots rdf:datatype="http://www.w3.org/2001/XMLSchema#string">False</hasParkingSlots>
+        <hasSurname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stikoudi</hasSurname>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Kwnstantinos_Mpaskos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Kwnstantinos_Mpaskos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Technical_Executive"/>
+        <isTechnical_ExecutiveOf rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Toyota_Παρασκευάς_Α.Ε"/>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1098</hasID>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kwnstantinos</hasName>
+        <hasParkingSlots rdf:datatype="http://www.w3.org/2001/XMLSchema#string">False</hasParkingSlots>
+        <hasSurname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mpaskos</hasSurname>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Maria_Mpotsali -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Maria_Mpotsali">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Trainee_Engineer"/>
+        <isTrainee_EngineerOf rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Toyota_Παρασκευάς_Α.Ε"/>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</hasGender>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1893</hasID>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maria</hasName>
+        <hasSurname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mpotsali</hasSurname>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Mariana_Mitsa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Mariana_Mitsa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Analyst_Engineer"/>
+        <isAnalystEngineerOf rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Toyota_Παρασκευάς_Α.Ε"/>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</hasGender>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1448</hasID>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mariana</hasName>
+        <hasSurname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mitsa</hasSurname>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Marina_Chaliapa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Marina_Chaliapa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Analyst_Engineer"/>
+        <isAnalystEngineerOf rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Toyota_Παρασκευάς_Α.Ε"/>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</hasGender>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1673</hasID>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marina</hasName>
+        <hasSurname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chaliapa</hasSurname>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Michaela_Liarou -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Michaela_Liarou">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Tire"/>
+        <isTire_TechnicianOf rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Toyota_Παρασκευάς_Α.Ε"/>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</hasGender>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3222</hasID>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Michaela</hasName>
+        <hasSurname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Liarou</hasSurname>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Paris_Tsioulis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Paris_Tsioulis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Maintenance"/>
+        <isMaint_TechnicianOf rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Toyota_Παρασκευάς_Α.Ε"/>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2222</hasID>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paris</hasName>
+        <hasSurname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tsioulis</hasSurname>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Petros_Papaiwnnou -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Petros_Papaiwnnou">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Maintenance"/>
+        <isMaint_TechnicianOf rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Toyota_Παρασκευάς_Α.Ε"/>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2223</hasID>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Petros</hasName>
+        <hasSurname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Papaiwnou</hasSurname>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Prius -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Prius">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Exhibition_Cars"/>
+        <belongsTo rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Toyota_Παρασκευάς_Α.Ε"/>
+        <hasCarDetails rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1200cc</hasCarDetails>
+        <hasCarModel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Toyota Prius Electric</hasCarModel>
+        <hasCarType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sedan</hasCarType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#RAV-4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#RAV-4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Exhibition_Cars"/>
+        <belongsTo rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Toyota_Παρασκευάς_Α.Ε"/>
+        <hasCarDetails rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2500cc</hasCarDetails>
+        <hasCarModel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Toyota RAV-4 Benzin</hasCarModel>
+        <hasCarType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Crossover</hasCarType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Rafail_Mixanikos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Rafail_Mixanikos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Maintenance"/>
+        <isMaint_TechnicianOf rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Toyota_Παρασκευάς_Α.Ε"/>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2322</hasID>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rafail</hasName>
+        <hasSurname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mixanikos</hasSurname>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Sienna -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Sienna">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Exhibition_Cars"/>
+        <belongsTo rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Toyota_Παρασκευάς_Α.Ε"/>
+        <hasCarDetails rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1400cc</hasCarDetails>
+        <hasCarModel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Toyota Sienna Hybrid</hasCarModel>
+        <hasCarType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Minivan</hasCarType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Supra -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Supra">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Exhibition_Cars"/>
+        <belongsTo rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Toyota_Παρασκευάς_Α.Ε"/>
+        <hasCarDetails rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2500cc</hasCarDetails>
+        <hasCarModel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Toyota Supra Benzin</hasCarModel>
+        <hasCarType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Supercar</hasCarType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Toyota_Παρασκευάς_Α.Ε -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Toyota_Παρασκευάς_Α.Ε">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Car_Representative"/>
+        <hasAdress rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thessalonikis-Michanionas 16km</hasAdress>
+        <hasCity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thessaloniki</hasCity>
+        <hasCountry rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Greece</hasCountry>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Xristos_Papanastasiou -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Xristos_Papanastasiou">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Tire"/>
+        <isTire_TechnicianOf rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Toyota_Παρασκευάς_Α.Ε"/>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3322</hasID>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Xristos</hasName>
+        <hasSurname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Papanastasiou</hasSurname>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Xrusostomos_Tasios -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Xrusostomos_Tasios">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Head_of_Car_Mechanic"/>
+        <isHeadCarMechanicOf rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Toyota_Παρασκευάς_Α.Ε"/>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</hasGender>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1513</hasID>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Xrusostomos</hasName>
+        <hasSurname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tasios</hasSurname>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Yaris -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Yaris">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Exhibition_Cars"/>
+        <belongsTo rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Toyota_Παρασκευάς_Α.Ε"/>
+        <hasCarDetails rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1000cc</hasCarDetails>
+        <hasCarModel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Toyota Yaris Hybrid</hasCarModel>
+        <hasCarType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Micro</hasCarType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Zoi_Dermentzoglou -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Zoi_Dermentzoglou">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Chief_Marketing_Officer"/>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Female</hasGender>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1444</hasID>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zwi</hasName>
+        <hasSurname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dermentzoglou</hasSurname>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Office"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Parking"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/zoide/ontologies/2019/10/untitled-ontology-22#Service"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.7.2018-12-02T02:23:35Z) https://github.com/owlcs/owlapi -->
+
